@@ -1,4 +1,4 @@
-// Ridiculous at First Glance, Real by the Second — entry program (v2).
+// Ridiculous at First Glance, Real by the Second — entry program (v3 final).
 // Writes one original one-line startup pitch (1-200 chars, no trailing
 // newline) to entry.txt, deterministically, using only the Node stdlib.
 //
@@ -8,7 +8,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const PITCH =
-  "We rent out cars that are already dented, so nervous drivers pay extra for the one rental they cannot be blamed for scratching.";
+  "We rent cars that are already dented, so nervous drivers pay extra for the one rental nobody can blame them for scratching.";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
